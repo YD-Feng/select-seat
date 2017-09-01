@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link type="text/css" rel="stylesheet" href="css/reset.css">
+    <link type="text/css" rel="stylesheet" href="css/style.css">
+
+    <script src="lib/three.min.js"></script>
+    <script src="lib/tween.min.js"></script>
+    <script src="lib/status.min.js"></script>
+</head>
+<body>
+<div id="J-canvas-wrap" class="canvas-wrap"></div>
+<div class="top-bar">
+    <span class="color-block default"></span>可选座位
+    <span class="color-block selected"></span>选中座位
+    <span class="color-block occupied"></span>被占座位
+</div>
+<div class="bottom-bar">
+    <div class="tips">按【空格】键切换操作模式，当前操作模式为：<span id="J-mode-name" class="mode-name">视角锁定模式</span></div>
+    <button type="button" class="btn" id="J-cancel">取 消</button>
+    <button type="button" class="btn" id="J-submit">确 定</button>
+</div>
+<div id="J-alert" class="alert"></div>
+
+<script type="text/javascript" src="js/index.js"></script>
+</body>
+</html>

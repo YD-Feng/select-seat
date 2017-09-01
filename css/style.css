@@ -1,0 +1,103 @@
+.canvas-wrap{
+    border: none;
+    cursor: move;
+    width: 1400px;
+    height: 600px;
+    background-color: #EEEEEE;
+}
+.canvas-wrap canvas{
+    cursor: default;
+}
+.canvas-wrap.move canvas{
+    cursor: move;
+}
+.canvas-wrap.target canvas{
+    cursor: pointer;
+}
+.bottom-bar{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    color: #ffffff;
+    background-color: rgba(255, 255, 255, 0.3);
+    text-align: center;
+    box-shadow: 0 0 10px #000000;
+}
+.bottom-bar .tips{
+    float: left;
+    padding-left: 10px;
+}
+.bottom-bar .tips .mode-name{
+    color: #fffa98;
+}
+.bottom-bar .btn{
+    float: right;
+    margin-top: 8px;
+    margin-right: 10px;
+    margin-left: 5px;
+    width: 80px;
+    height: 30px;
+    border: 2px solid #ffffff;
+    border-radius: 4px;
+    font-size: 14px;
+    background: transparent;
+    color: #ffffff;
+}
+.bottom-bar .btn:hover{
+    background: #ffffff;
+    color: #333333;
+}
+.alert{
+    max-width: 300px;
+    padding: 15px 20px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.6);
+    box-shadow: 0 0 5px #666666;
+    border-radius: 6px;
+    color: #fffa98;
+    z-index: -1;
+    opacity: 0;
+    transition: opacity 0.5s;
+    font-size: 14px;
+    line-height: 20px;
+}
+.alert.show{
+    z-index: 0;
+    opacity: 1;
+}
+.top-bar{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 48px;
+    line-height: 48px;
+    padding: 0 15px;
+    color: #ffffff;
+    background-color: rgba(255, 255, 255, 0.3);
+    text-align: center;
+    box-shadow: 0 0 10px #000000;
+    text-align: right;
+}
+.top-bar .color-block{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #ffffff;
+    vertical-align: sub;
+    margin-right: 5px;
+    margin-left: 15px;
+}
+.top-bar .color-block.default{
+    background-color: #197dc7;
+}
+.top-bar .color-block.selected{
+    background-color: #00dd00;
+}
+.top-bar .color-block.occupied{
+    background-color: #dd0000;
+}
